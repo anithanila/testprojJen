@@ -11,7 +11,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 
 features = {"src/test/resources/testfea.feature"},
-//plugin = {"pretty", "html:target/cucumber-htmlreport","json-pretty:target/cucumber-report.json"},
+plugin={"pretty:target/cucumber-htmlreport.text", "json:target/cucmber-report.json"},
 glue={"step"},
 
 tags = {"@tag"}
