@@ -25,10 +25,14 @@ public class stepdefi {
 		              System.out.println("Given statement executed successfully");;
 		              System.setProperty("webdriver.chrome.driver", "C:/Users/yogeshraja/SeleniumDriver/bin/chromedriver.exe");
 		              driver = new ChromeDriver();
+		              System.out.println("check line 1");
+
 		              driver.get("http://gmail.com");
 		              driver.manage().window().maximize();
 		              driver.findElement(By.id("identifierId")).sendKeys("praniyogesh@gmail.com");
 		              driver.findElement(By.id("identifierNext")).click();
+		              System.out.println("check line 2");
+
 		              //driver.findElement(By.cssSelector("div[class='Xb9hP']")).sendKeys("Praniyog@1");
 		              Thread.sleep(5000); 
 		              Actions actions = new Actions(driver);
