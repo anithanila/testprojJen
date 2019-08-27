@@ -4,7 +4,7 @@ Feature: Title of your feature
 
   @tag1
   Scenario: Title of your scenario
-    #Given sample feature file is ready
+    Given sample feature file is ready
 		When I run the feature file
 	  Then run should be successful
 
